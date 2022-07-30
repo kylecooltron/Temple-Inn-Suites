@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Temple Inn & Suites: Student project website WDD 230"
+    />
+    <meta name="author" content="Kyle Coulon" />
+    <title>Temple Inn & Suites</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <!-- google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <!-- weather warning banner -->
+    <div class="weather-warning-banner">
+      ☁ Weather Alert! Severe Weather Warning.
+      <button onclick="closeWeatherAlert()">X</button>
+    </div>
+    <!-- HEADER HERE -->
+    <header>
+      <div class="header-content">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Temple Inn & Suites Logo" />
+        </a>
+        <div>
+          <h1>Temple Inn & Suites</h1>
+          <h2>Make your experience unforgettable</h2>
+        </div>
+        <div class="date">current date</div>
+      </div>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav>
+      <div>
+        <a href="https://www.facebook.com/ChurchofJesusChrist" target="_blank"
+          ><img src="images/facebook.png" alt="facebook social media link"
+        /></a>
+        <a href="https://www.youtube.com/user/kylecoulon" target="_blank"
+          ><img src="images/youtube.png" alt="youtube social media link"
+        /></a>
+      </div>
+      <ul class="navigation">
+        <li><a class="ham" href="#">☰</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="temple.html">Temple</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTENT HERE -->
+
+    <main>
+      <h1>Home</h1>
+      <div class="outside-div">
+        <em> Our Purpose...</em> <br />
+        is to create unforgettable experiences for our guests by providing
+        specialized services for people visiting the temple.
+      </div>
+      <div class="content homepage">
+        <section class="hero-action">
+          <img
+            src="images/temple-hero2.jpg"
+            alt="temple inn and suites pool and lobby"
+          />
+          <h2>Welcome to Temple Inn & Suites</h2>
+          <form action="reservation.html">
+            <button type="submit">Make a Reservation</button>
+          </form>
+        </section>
+        <section class="alignmiddle text-center">
+          <div>
+            <h2 class="lessmargin">About Us</h2>
+
+            <div class="text-center p-space">
+              <p class="event-info">
+                Since 2022, we've been making it easy and comfortable for
+                members and friends of
+              </p>
+              <a id="churchtitle" href="https://www.churchofjesuschrist.org">
+                The Church of Jesus Christ <br />
+                of Latter-day Saints
+              </a>
+              <p class="event-info">
+                to visit and work at temples near our convenient hotels.
+              </p>
+              <br />
+              <a href="services.html"> <small>more info ...</small> </a>
+            </div>
+          </div>
+        </section>
+        <section class="specialbox text-center">
+          <figure>
+            <img src="images/templewedding.jpg" alt="Temple Wedding Picture" />
+          </figure>
+          <h3>Temple Weddings</h3>
+          <p>
+            Our wedding reception hall can be easily customized with a simple
+            catering menu and kitchen access for food preparation and serving.
+          </p>
+        </section>
+
+        <section class="section-news-container text-center">
+          <div class="divchild temple-highlight-title">
+            <h2>Temple Highlight</h2>
+          </div>
+          <div class="divchild"></div>
+          <div class="divchild">
+            <figure id="oakland-temple-fig">
+              <img
+                src="images/oakland-temple.jpg"
+                alt="Oakland California Temple"
+              />
+              <figcaption>Oakland California Temple</figcaption>
+            </figure>
+          </div>
+          <div class="divchild specialized">
+            <div>
+              <h3>Our Hotel Provides</h3>
+              <ul class="text-left">
+                <li>Changing Rooms for Patrons</li>
+                <li>Low-cost babysitting</li>
+                <li>Long-term accommodations</li>
+                <li>Family Search Center</li>
+                <li>Wedding reception venue</li>
+                <li>Kitchen service</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="divchild section-news">
+            <div class="news-title">
+              Beautiful temple in Oakland, California
+            </div>
+            <div class="news-date">Dedicated 17 November 1964</div>
+            <div class="temple-info-flex">
+              <div>
+                Address: 4770 Lincoln Ave Oakland CA 94602 United States
+              </div>
+              <div>Telephone: 510-531-3200</div>
+            </div>
+          </div>
+
+          <div class="divchild">
+            <h3 id="weather-title">Current Weather</h3>
+            <hr />
+            <small id="weather-title-small">Oakland, CA</small>
+
+            <div class="weather-container-grid">
+              <div class="weather-box">
+                <em class="weather-temp">
+                  <span id="current-temp">56</span>
+                  <span class="tiny-text">&deg;F</span>
+                </em>
+                <figure>
+                  <img
+                    src="images/partly-cloudy.png"
+                    alt="partly cloudy weather icon"
+                    id="weather-icon"
+                  />
+                  <figcaption id="weather-caption"></figcaption>
+                </figure>
+              </div>
+
+              <div class="weather-grid">
+                <div class="weather-grid-flex">
+                  <div>Humidity:</div>
+                  <div><span id="current-humidity"></span></div>
+                </div>
+                <div class="weather-grid-flex">
+                  <div>Wind:</div>
+                  <div id="current-wind"></div>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+
+          <div class="divchild forecast-box">
+            <div class="forecast-title">
+              <p id="forecast-p">4-day weather forecast</p>
+            </div>
+
+            <div id="forecast-container">
+              <div id="forecast-div"></div>
+            </div>
+          </div>
+
+          <div class="news-title text-center">
+            <hr />
+
+            <small> Visit our </small>
+            <a href="temple.html"> Temple's</a>
+            <small> page to find out more! </small>
+
+            <hr />
+            <br />
+          </div>
+        </section>
+
+        <section class="spotlight">
+          <h2 class="text-center">Free Ammenities</h2>
+
+          <ul>
+            <li>Breakfast</li>
+            <li>Exercise room</li>
+            <li>Outdoor pool</li>
+            <li>WiFi high-speed</li>
+            <li>Smart TVs</li>
+            <li>Temple shuttle</li>
+            <li>Family history consultation</li>
+          </ul>
+        </section>
+        <section class="text-center spotlight">
+          <figure>
+            <img
+              src="images/albuquerque_new_mexico_temple.jpeg"
+              alt="Albuquerque New Mexico temple"
+            />
+          </figure>
+          <h2 class="spotlighth2">Other Temples</h2>
+          <form action="temple.html">
+            <button type="submit">See Locations</button>
+          </form>
+        </section>
+      </div>
+
+      <div class="services service-left">
+        <div>
+          <h2>Unforgettable Experiences</h2>
+          <hr id="services-hr" />
+          <p class="services-darker">
+            We are dedicated to temple visitors have amazing experiences.
+          </p>
+          <ul>
+            <li>Vacation</li>
+            <li>Temple Trip</li>
+            <li>Full-time Temple Missionary Stay</li>
+            <li>Wedding</li>
+            <li>Family Gathering</li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="images/templetrip.jpg"
+            alt="family walking outside temple"
+          />
+        </div>
+        <div>
+          <a href="reservation.html"> Contact us </a> to start planning your
+          stay.
+        </div>
+      </div>
+
+      <section class="goldspotlight">
+        <h3>Special thanks</h3>
+        to OpenWeather for realtime weather information. <br />
+        For more information visit:
+        <a href="https://openweathermap.org/" target="_blank"
+          >openweathermap.org</a
+        >
+      </section>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+      <div class="foot-logo-box">
+        <div>
+          <img src="images/logo.png" alt="Temple Inn & Suites Logo" />
+          <p>Headquaters: Bethesda, MD</p>
+        </div>
+        <div>
+          <em>info@templeinn.com</em>
+          <p>+1 356-226-2222</p>
+          <div>
+            <a href="https://goo.gl/maps/q9C4aw1A9jrzmw5r5" target="_blank">
+              📍 Location on Map
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="foot-info-box">
+        <div class="date">current date</div>
+        &copy; <span id="year">year</span> &bull; Temple Inn & Suites | Kyle
+        Coulon | WDD 230 Project | Last modification:
+        <span id="modified">last modified</span>
+      </div>
+      <script src="js/chamber-script.js"></script>
+      <script src="js/weatherapi.js"></script>
+    </footer>
+  </body>
+</html>
